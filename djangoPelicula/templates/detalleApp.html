@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href={% static "css/style.css" %}>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Pelicula</h1>
+        <h1>{{ titulo }}</h1>
     </header>
     <div>
         <img src="">
-        <p>Descripción: </p>
-        <p>Valoración: </p>
-        <button><a href="">Volver</a></button>
+        <p>Descripción: {{descripcion}}</p>
+        <p>Valoración: {{ valoracion }}</p>
+        <button><a href=" ">Volver</a></button>
     </div>
 </body>
 </html>

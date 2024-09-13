@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href={% static "css/style.css" %}>
     <title>Document</title>
 </head>
 <body>
@@ -11,10 +12,9 @@
         <h1>Bienvenidos a Mi Página</h1>
     </header>
     <div>
-        <a href="detalle"><img src=""></a>
-        <a href="detalle"><img src=""></a>
-        <a href="detalle"><img src=""></a>
+        <a href="/got/"><img src={% static "img/got.jpg" %}></a>
+        <a href="/pb/"><img src= {% static "img/pb.jpg" %}></a>
+        <a href="/ba/"><img src= {% static "img/ba.jpg" %}></a>
     </div>
-    
 </body>
 </html>
